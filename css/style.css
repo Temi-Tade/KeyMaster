@@ -1,0 +1,195 @@
+:root{
+    --light-theme: #EEE;
+    --dark-theme: #333;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    letter-spacing: .75px;
+    font-family: "Montserrat", sans-serif;
+    transition: .5s;
+}
+
+*:focus{
+    outline: none;
+}
+
+html{
+    height: 100%;
+    background-color: var(--dark-theme);
+    color: var(--light-theme);
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    height: 100%;
+    overflow: hidden;
+}
+
+section{
+    height: 100%;
+    position: relative;
+}
+
+header{
+    height: auto;
+}
+
+input:disabled{
+    background-color: #7777;
+}
+
+button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 999px;
+}
+
+button:hover, button:focus{
+    box-shadow: 0 0 0 2px #3337;
+    transform: scale(1.025);
+}
+
+#game_info{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--light-theme);
+    color: var(--dark-theme);
+    align-items: center;
+    padding: .5rem;
+}
+
+#game_info *{
+    width: 25%;
+    text-align: center;
+}
+
+#menu button{
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+#word{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#cpu_word, #user_word{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    overflow: hidden;
+}
+
+#dialog_bg{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: #3337;
+    padding-top: 10rem;
+    display: none;
+}
+
+#dialog{
+    width: 50%;
+    max-height: 20rem;
+    overflow-y: auto;
+    background-color: var(--light-theme);
+    color: var(--dark-theme);
+    margin: auto;
+    box-shadow: 0 0 4px 2px #777;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+#dialog input{
+    display: inline-block;
+    width: 100%;
+    padding: .75rem;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    border: 1.5px solid var(--dark-theme);
+    color: var(--dark-theme);
+}
+
+#dialog button{
+    width: 15dvw;
+    padding: .75rem;
+    display: block;
+    cursor: pointer;
+    border: 0;
+    background-color: var(--dark-theme);
+    color: var(--light-theme);
+    font-size: 1rem;
+    border-radius: .5rem;
+    margin: auto;
+}
+
+.score{
+    font-size: 4rem;
+}
+
+.setting{
+    border-bottom: 1px solid #777;
+    padding: .5rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting p:first-child{
+    width: 70%;
+    text-align: left;
+}
+
+.setting p:last-child{
+    width: 30%;
+}
+
+#dialog .setting button{
+    padding: .5rem;
+    width: auto;
+}
+
+#dialog .settinginput{
+    padding: .5rem;
+}
+
+#dialog .setting .delbtn{
+    font-size: xx-small;
+}
+
+#player-name{
+    text-align: center;
+}
+
+button#add:disabled{
+    background-color: #777;
+}
+
+button#add:disabled:hover{
+    transform: none;
+    box-shadow: none;
+}
+
+.fx{
+    font-size: 2rem;
+    margin-right: 2rem;
+    opacity: 0;
+    position: absolute;
+    right: 15%;
+}

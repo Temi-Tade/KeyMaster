@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Master Keys</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <div id="game_info">
+                <div id="player_name"></div>
+                <div id="score"></div>
+                <div id="highscore"></div>
+                <div id="menu"><button onclick="SHOW_SETTINGS()" class="fa-solid fa-bars"></button></div>
+            </div>
+        </header>
+
+        <div id="word">
+            <div id="cpu_word"></div>
+            <div id="user_word"></div>
+        </div>
+
+        <div id="dialog_bg">
+            <div id="dialog">
+                <button id="close" style="float: right; background-color: transparent; font-size: 2rem; border: none; padding-right: 1rem; cursor: pointer;" title="close" onclick="this.parentElement.parentElement.style.display = 'none'">&times;</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/device.js"></script>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/settings.js"></script>
+</body>
+</html>
