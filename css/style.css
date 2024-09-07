@@ -96,14 +96,14 @@ button:hover, button:focus{
     width: 100%;
     top: 0;
     background-color: #3337;
-    padding-top: 10rem;
+    padding-top: 7.5rem;
     display: none;
 }
 
 #dialog{
     width: 50%;
-    max-height: 20rem;
-    overflow-y: auto;
+    max-height: 30rem;
+    /* overflow-y: auto; */
     background-color: var(--light-theme);
     color: var(--dark-theme);
     margin: auto;
@@ -113,7 +113,7 @@ button:hover, button:focus{
     text-align: center;
 }
 
-#dialog input{
+#dialog input[type=text]{
     display: inline-block;
     width: 100%;
     padding: .75rem;
@@ -192,4 +192,47 @@ button#add:disabled:hover{
     opacity: 0;
     position: absolute;
     right: 15%;
+}
+
+label{
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+
+input[type=checkbox]{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.timer{
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+    padding: 1rem;
+    display: none;
+}
+
+.timer span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--light-theme);
+    width: 5rem;
+    height: 5rem;
+    color: #333;
+    padding: 3rem;
+    border-radius: 50%;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: .5rem;
 }

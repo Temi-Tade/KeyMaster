@@ -4,7 +4,8 @@ const SAVE_STATE = () => {
             userName: "",
             words: [],
             userWords: [],
-            highscore: 0
+            highscore: 0,
+            isTimeBased: false
         }
     
         localStorage.setItem("typing_game_data", JSON.stringify(APP_DATA))
